@@ -1,0 +1,429 @@
+
+ ---- INSERTING KEY: 23 ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 1
+ ---- INSERTING KEY: 11 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 23
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 4, Slot: 4
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ ---- INSERTING KEY: 13 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 23
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 4, Slot: 4
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ Return Key: 23
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 2
+ tree)->mgmtData->treeNumEntries: 3
+IMP: NODE IS ALSO A ROOT NODE
+Creating new root..........
+ ++++++++++ NEW ROOT DATA ++++++++++
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ ---- INSERTING KEY: 17 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: -1
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 2, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 4 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: 5
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ Return Key: 17
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: -1
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ INFO: NOT FULL. NO SPLIT
+ ---------- Updated Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ ---- INSERTING KEY: 52 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 2
+---------- Current Node Data: ---------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 2
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: 3, Slot: 2
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+Message: NO CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ ---- INSERTING KEY: 1 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 4, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 5 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: 4, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 5, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ Return Key: 13
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 5, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+INFO: NON-LEAF SPLIT IS REQUIRED
+INFO: THIS IS ROOT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+ ---------- New Node Data ----------
+
+ ------- Node Page: 6 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 11
+ Index: 0, Page: 4, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- New Root Data ----------
+
+ ------- Node Page: 7 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 154627632
+ Index: 0, Page: 3, Slot: -1
+ Index: 1, Page: 6, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 6
+ ---------- Updated Tree Info ----------
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 6[test_assign4_1.c-random insertion order and scan-L242-01:58:10] OK: expected <6> and was <6>: number of entries in btree
+[test_assign4_1.c-random insertion order and scan-L250-01:58:10] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L250-01:58:10] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L250-01:58:10] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L252-01:58:10] OK: expected <303> and was <303>: no error returned by scan
+[test_assign4_1.c-random insertion order and scan-L253-01:58:10] FAILED: expected <6> but was <3>: have seen all entries

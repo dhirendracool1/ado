@@ -1,0 +1,423 @@
+
+ ---- INSERTING KEY: 23 ----
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (4, 4)]
+ [1 => (-1, -1)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 1
+ ---- INSERTING KEY: 11 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (4, 4)]
+ [1 => (-1, -1)]
+ [2 => (-1, -1)]
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (4, 4)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ ---- INSERTING KEY: 13 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (4, 4)]
+ [2 => (-1, -1)]
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 2 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (4, 4)]
+ [1 => (-1, -1)]
+ [2 => (-1, -1)]
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ Return Key: 23
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 2
+ tree)->mgmtData->treeNumEntries: 3
+IMP: NODE IS ALSO A ROOT NODE
+Creating new root..........
+ ++++++++++ NEW ROOT DATA ++++++++++
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (2, -1)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ ---- INSERTING KEY: 17 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => -1)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (2, -1)]
+ [2 => (-1, -1)]
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (2, -1)]
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 4 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (3, 5)]
+ [1 => (-1, -1)]
+ [2 => (2, -1)]
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (4, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ Return Key: 17
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (4, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => -1)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (2, -1)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ INFO: NOT FULL. NO SPLIT
+ ---------- Updated Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ ---- INSERTING KEY: 52 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 2
+---------- Current Node Data: ---------
+
+ ------- Node Page: 2 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 2)
+ Node Key Pointers-->
+ [0 => (4, 4)]
+ [1 => (-1, -1)]
+ [2 => (-1, -1)]
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 2 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 52)
+ Node Key Pointers-->
+ [0 => (4, 4)]
+ [1 => (3, 2)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+Message: NO CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ ---- INSERTING KEY: 1 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 11)
+ (1 => 13)
+ Node Key Pointers-->
+ [0 => (2, 3)]
+ [1 => (1, 2)]
+ [2 => (4, -1)]
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 5 --------
+ Node Keys -->
+ (0 => 13)
+ (1 => 0)
+ Node Key Pointers-->
+ [0 => (1, 2)]
+ [1 => (-1, -1)]
+ [2 => (4, -1)]
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 1)
+ (1 => 11)
+ Node Key Pointers-->
+ [0 => (1, 1)]
+ [1 => (2, 3)]
+ [2 => (5, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ Return Key: 13
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ Node Keys -->
+ (0 => 1)
+ (1 => 11)
+ Node Key Pointers-->
+ [0 => (1, 1)]
+ [1 => (2, 3)]
+ [2 => (5, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+INFO: NON-LEAF SPLIT IS REQUIRED
+INFO: THIS IS ROOT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (4, -1)]
+ [2 => (2, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 6
+ ---------- New Node Data ----------
+
+ ------- Node Page: 6 --------
+ Node Keys -->
+ (0 => 23)
+ (1 => 11)
+ Node Key Pointers-->
+ [0 => (4, -1)]
+ [1 => (2, -1)]
+ [2 => (-1, -1)]
+ ---------- New Root Data ----------
+
+ ------- Node Page: 7 --------
+ Node Keys -->
+ (0 => 17)
+ (1 => 154279472)
+ Node Key Pointers-->
+ [0 => (3, -1)]
+ [1 => (6, -1)]
+ [2 => (-1, -1)]
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 3 --------
+ Node Keys -->
+ (0 => 13)
+ (1 => 23)
+ Node Key Pointers-->
+ [0 => (1, -1)]
+ [1 => (5, -1)]
+ [2 => (-1, -1)]
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 6
+ ---------- Updated Tree Info ----------
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 6[test_assign4_1.c-random insertion order and scan-L242-10:51:07] OK: expected <6> and was <6>: number of entries in btree
+
+ ---------- Scanning Current Node Data ----------
+ (7, 0)
+ Message: This is not a leaf node. Pinning page: 3
+ Message: This is not a leaf node. Pinning page: 1
+ Page, pointer
+ (1, 0)[test_assign4_1.c-random insertion order and scan-L250-10:51:07] OK: expected true: did we find the correct RID?
+
+ ---------- Scanning Current Node Data ----------
+ (1, 1)
+ Page, pointer
+ (1, 1)[test_assign4_1.c-random insertion order and scan-L250-10:51:07] OK: expected true: did we find the correct RID?
+
+ ---------- Scanning Current Node Data ----------
+ (1, 2)
+ Page, pointer
+ (1, 2)
+ ---------- Scanning Current Node Data ----------
+ (5, 0)
+ Page, pointer
+ (5, 0)[test_assign4_1.c-random insertion order and scan-L250-10:51:07] OK: expected true: did we find the correct RID?
+
+ ---------- Scanning Current Node Data ----------
+ (5, 1)
+ Page, pointer
+ (5, 1)
+ Found no pointer for this pair.[test_assign4_1.c-random insertion order and scan-L252-10:51:07] OK: expected <303> and was <303>: no error returned by scan
+[test_assign4_1.c-random insertion order and scan-L253-10:51:07] FAILED: expected <6> but was <3>: have seen all entries

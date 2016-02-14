@@ -1,0 +1,261 @@
+==21951== Memcheck, a memory error detector
+==21951== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==21951== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==21951== Command: ./test_assign4_1
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402EE48: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x8054619: serializeBTreeNodePage (rm_serializer.c:592)
+==21951==    by 0x804AB93: insertKey (btree_mgr.c:347)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4204438 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804AA12: insertKey (btree_mgr.c:304)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402EE48: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x805464D: serializeBTreeNodePage (rm_serializer.c:595)
+==21951==    by 0x804AB93: insertKey (btree_mgr.c:347)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x420443c is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804AA12: insertKey (btree_mgr.c:304)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x80547CE: deSerializeBTreeNodePage (rm_serializer.c:644)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4207750 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x80547F2: deSerializeBTreeNodePage (rm_serializer.c:647)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4207754 is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402ED50: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x8054619: serializeBTreeNodePage (rm_serializer.c:592)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804AECD: searchAndInsertKey (btree_mgr.c:521)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4207750 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402ED50: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x805464D: serializeBTreeNodePage (rm_serializer.c:595)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804AECD: searchAndInsertKey (btree_mgr.c:521)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4207754 is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x804C0CA: handleLeafOverFlow (btree_mgr.c:1082)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099b8 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x804C0CC: handleLeafOverFlow (btree_mgr.c:1081)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4209af8 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804BE39: handleLeafOverFlow (btree_mgr.c:1001)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x804C0FC: handleLeafOverFlow (btree_mgr.c:1084)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099bc is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x804C0FF: handleLeafOverFlow (btree_mgr.c:1083)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4209afc is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804BE39: handleLeafOverFlow (btree_mgr.c:1001)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x804C11E: handleLeafOverFlow (btree_mgr.c:1086)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099b8 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid write of size 4
+==21951==    at 0x804C137: handleLeafOverFlow (btree_mgr.c:1087)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099bc is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402EE48: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x8054619: serializeBTreeNodePage (rm_serializer.c:592)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804C19A: handleLeafOverFlow (btree_mgr.c:1097)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4209af8 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804BE39: handleLeafOverFlow (btree_mgr.c:1001)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402EE48: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x805464D: serializeBTreeNodePage (rm_serializer.c:595)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804C19A: handleLeafOverFlow (btree_mgr.c:1097)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x4209afc is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x804CD55: createNodePage (btree_mgr.c:1400)
+==21951==    by 0x804BE39: handleLeafOverFlow (btree_mgr.c:1001)
+==21951==    by 0x804ADA5: searchAndInsertKey (btree_mgr.c:485)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402ED50: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x8054619: serializeBTreeNodePage (rm_serializer.c:592)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804ADF8: searchAndInsertKey (btree_mgr.c:496)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099b8 is 0 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+==21951== Invalid read of size 4
+==21951==    at 0x402ED50: memmove (mc_replace_strmem.c:1070)
+==21951==    by 0x805464D: serializeBTreeNodePage (rm_serializer.c:595)
+==21951==    by 0x804CE30: updateBTreeNodePageInBufManager (btree_mgr.c:1429)
+==21951==    by 0x804ADF8: searchAndInsertKey (btree_mgr.c:496)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951==  Address 0x42099bc is 4 bytes after a block of size 16 alloc'd
+==21951==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==21951==    by 0x8054763: deSerializeBTreeNodePage (rm_serializer.c:635)
+==21951==    by 0x804AD18: searchAndInsertKey (btree_mgr.c:469)
+==21951==    by 0x804AC6F: insertKey (btree_mgr.c:379)
+==21951==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21951==    by 0x8048838: main (test_assign4_1.c:33)
+==21951== 
+[test_assign4_1.c-test b-tree inserting and search-L79-16:51:53] FAILED: expected <5> but was <4>: number of nodes in btree
+==21951== 
+==21951== HEAP SUMMARY:
+==21951==     in use at exit: 44,588 bytes in 92 blocks
+==21951==   total heap usage: 160 allocs, 68 frees, 133,900 bytes allocated
+==21951== 
+==21951== LEAK SUMMARY:
+==21951==    definitely lost: 536 bytes in 24 blocks
+==21951==    indirectly lost: 240 bytes in 18 blocks
+==21951==      possibly lost: 0 bytes in 0 blocks
+==21951==    still reachable: 43,812 bytes in 50 blocks
+==21951==         suppressed: 0 bytes in 0 blocks
+==21951== Rerun with --leak-check=full to see details of leaked memory
+==21951== 
+==21951== For counts of detected and suppressed errors, rerun with: -v
+==21951== ERROR SUMMARY: 54 errors from 16 contexts (suppressed: 0 from 0)

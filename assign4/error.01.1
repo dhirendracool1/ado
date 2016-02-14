@@ -1,0 +1,39 @@
+==21403== Memcheck, a memory error detector
+==21403== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==21403== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==21403== Command: ./test_assign4_1
+==21403== 
+==21403== Invalid read of size 4
+==21403==    at 0x8054BBC: markDirty (buffer_mgr.c:173)
+==21403==    by 0x804AB9E: insertKey (btree_mgr.c:348)
+==21403==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21403==    by 0x8048838: main (test_assign4_1.c:33)
+==21403==  Address 0xa is not stack'd, malloc'd or (recently) free'd
+==21403== 
+==21403== 
+==21403== Process terminating with default action of signal 11 (SIGSEGV)
+==21403==  Access not within mapped region at address 0xA
+==21403==    at 0x8054BBC: markDirty (buffer_mgr.c:173)
+==21403==    by 0x804AB9E: insertKey (btree_mgr.c:348)
+==21403==    by 0x8048AD0: testInsertAndFind (test_assign4_1.c:75)
+==21403==    by 0x8048838: main (test_assign4_1.c:33)
+==21403==  If you believe this happened as a result of a stack
+==21403==  overflow in your program's main thread (unlikely but
+==21403==  possible), you can try to increase the size of the
+==21403==  main thread stack using the --main-stacksize= flag.
+==21403==  The main thread stack size used in this run was 8388608.
+==21403== 
+==21403== HEAP SUMMARY:
+==21403==     in use at exit: 47,936 bytes in 54 blocks
+==21403==   total heap usage: 74 allocs, 20 frees, 71,312 bytes allocated
+==21403== 
+==21403== LEAK SUMMARY:
+==21403==    definitely lost: 0 bytes in 0 blocks
+==21403==    indirectly lost: 0 bytes in 0 blocks
+==21403==      possibly lost: 0 bytes in 0 blocks
+==21403==    still reachable: 47,936 bytes in 54 blocks
+==21403==         suppressed: 0 bytes in 0 blocks
+==21403== Rerun with --leak-check=full to see details of leaked memory
+==21403== 
+==21403== For counts of detected and suppressed errors, rerun with: -v
+==21403== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,0 +1,2338 @@
+==15572== Memcheck, a memory error detector
+==15572== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==15572== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==15572== Command: ./test_assign4_1
+==15572== 
+==15572== Use of uninitialised value of size 4
+==15572==    at 0x40894AB: _itoa_word (_itoa.c:195)
+==15572==    by 0x408D5EA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804ABDD: insertKey (btree_mgr.c:358)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x40894B3: _itoa_word (_itoa.c:195)
+==15572==    by 0x408D5EA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804ABDD: insertKey (btree_mgr.c:358)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804ABDD: insertKey (btree_mgr.c:358)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804ABDD: insertKey (btree_mgr.c:358)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804B2A8: searchAndInsertKey (btree_mgr.c:622)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804B2A8: searchAndInsertKey (btree_mgr.c:622)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804D09A: handleLeafOverFlow (btree_mgr.c:1503)
+==15572==    by 0x804B34A: searchAndInsertKey (btree_mgr.c:643)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804D09A: handleLeafOverFlow (btree_mgr.c:1503)
+==15572==    by 0x804B34A: searchAndInsertKey (btree_mgr.c:643)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804B5A9: searchAndInsertKey (btree_mgr.c:709)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804B5A9: searchAndInsertKey (btree_mgr.c:709)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+
+ ---- INSERTING KEY: 1 ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 1
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 1
+ ---- INSERTING KEY: 11 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 1
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ ---- INSERTING KEY: 13 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ Return Key: 13
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 2
+ tree)->mgmtData->treeNumEntries: 3
+IMP: NODE IS ALSO A ROOT NODE
+Creating new root..........
+ ++++++++++ NEW ROOT DATA ++++++++++
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ ---- INSERTING KEY: 17 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 2
+---------- Current Node Data: ---------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 17
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: -1, Slot: -1
+ --- Tre==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804BA5E: searchAndInsertKey (btree_mgr.c:853)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804BA5E: searchAndInsertKey (btree_mgr.c:853)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804BAF8: searchAndInsertKey (btree_mgr.c:869)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804BAF8: searchAndInsertKey (btree_mgr.c:869)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+e Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 4
+Message: NO CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 4
+ ---- INSERTING KEY: 23 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 2
+---------- Current Node Data: ---------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 17
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 4 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 17
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 4
+ Return Key: 23
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 17
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ INFO: NOT FULL. NO SPLIT
+ ---------- Updated Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 5
+ ---- INSERTING KEY: 52 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: 4, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 4
+---------- Current Node Data: ---------
+
+ ------- Node Page: 4 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 4 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: 3, Slot: 2
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 6
+Message: NO CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 23
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 6[test_assign4_1.c-test b-tree inserting and search-L79-10:00:34] OK: expected <4> and was <4>: number of nodes in btree
+[test_assign4_1.c-test b-tree inserting and search-L81-10:00:34] OK: expected <6> and was <6>: number of entries in btree
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected ==15572== Syscall param write(buf) points to uninitialised byte(s)
+==15572==    at 0x41262B3: __write_nocancel (syscall-template.S:82)
+==15572==    by 0x40B7BA4: _IO_file_write@@GLIBC_2.1 (fileops.c:1289)
+==15572==    by 0x40B7A83: new_do_write (fileops.c:543)
+==15572==    by 0x40B8799: _IO_file_xsputn@@GLIBC_2.1 (fileops.c:1383)
+==15572==    by 0x40AD7F7: fwrite (iofwrite.c:45)
+==15572==    by 0x80565FE: writeCurrentBlock (storage_mgr.c:276)
+==15572==    by 0x8056563: writeBlock (storage_mgr.c:253)
+==15572==    by 0x804F12F: forcePage (buffer_mgr.c:201)
+==15572==    by 0x804EE3F: shutdownBufferPool (buffer_mgr.c:99)
+==15572==    by 0x804A598: closeBtree (btree_mgr.c:140)
+==15572==    by 0x8048ED2: testInsertAndFind (test_assign4_1.c:95)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572==  Address 0x41f9b68 is 64 bytes inside a block of size 4,096 alloc'd
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x804ED1D: initBufferPool (buffer_mgr.c:62)
+==15572==    by 0x804A45B: openBtree (btree_mgr.c:104)
+==15572==    by 0x8048A32: testInsertAndFind (test_assign4_1.c:71)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L91-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-test b-tree inserting and search-L100-10:00:34] OK: finished test
+
+
+ ---- INSERTING KEY: 23 ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 1
+ ---- INSERTING KEY: 52 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NO SPLIT REQUIRED
+ ------- Updated Node --------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: 3, Slot: 2
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ ---- INSERTING KEY: 17 ----Calling searchAndInsertKey.... From nodePageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: 3, Slot: 2
+ Index: 2, Page: -1, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 2 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 52
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: 2
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 3, Slot: 5
+ Index: 1, Page: 4, Slot: 4
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 1
+ tree)->mgmtData->treeNumEntries: 2
+ Return Key: 52
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 3, Slot: 5
+ Index: 1, Page: 4, Slot: 4
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 1
+ tree)->mgmtData->treeNumNodes: 2
+ tree)->mgmtData->treeNumEntries: 3
+IMP: NODE IS ALSO A ROOT NODE
+Creating new root..........
+ ++++++++++ NEW ROOT DATA ++++++++++
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 52
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ ---- INSERTING KEY: 11 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 52
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 17
+ Index: 1, Value: 23
+ Index: 0, Page: 3, Slot: 5
+ Index: 1, Page: 4, Slot: 4
+ Index: 2, Page: 2, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 4 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: 4
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 17
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: 4, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 3
+ tree)->mgmtData->treeNumEntries: 3
+ Return Key: 23
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 17
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: 4, Slot: -1
+ ---==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804C622: handleRootOverflow (btree_mgr.c:1209)
+==15572==    by 0x804BD1D: searchAndInsertKey (btree_mgr.c:965)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804C622: handleRootOverflow (btree_mgr.c:1209)
+==15572==    by 0x804BD1D: searchAndInsertKey (btree_mgr.c:965)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408E4BA: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804C63A: handleRootOverflow (btree_mgr.c:1211)
+==15572==    by 0x804BD1D: searchAndInsertKey (btree_mgr.c:965)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== Conditional jump or move depends on uninitialised value(s)
+==15572==    at 0x408CD30: vfprintf (vfprintf.c:1629)
+==15572==    by 0x4093EFE: printf (printf.c:35)
+==15572==    by 0x804EAF3: printNodeData (btree_mgr.c:2127)
+==15572==    by 0x804C63A: handleRootOverflow (btree_mgr.c:1211)
+==15572==    by 0x804BD1D: searchAndInsertKey (btree_mgr.c:965)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+ Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 52
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ INFO: NOT FULL. NO SPLIT
+ ---------- Updated Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ ---- INSERTING KEY: 13 ----Calling searchAndInsertKey.... From nodePageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 17
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 3, Slot: 5
+ Index: 2, Page: 4, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 5 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: 5
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: 4, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 5, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 4
+ tree)->mgmtData->treeNumEntries: 4
+ Return Key: 17
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 5, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 5
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 5
+INFO: NON-LEAF SPLIT IS REQUIRED
+INFO: THIS IS ROOT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 23
+ Index: 1, Value: 52
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 4, Slot: -1
+ Index: 2, Page: 2, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 3
+ tree)->mgmtData->treeNumNodes: 5
+ tree)->mgmtData->treeNumEntries: 5
+ ---------- New Node Data ----------
+
+ ------- Node Page: 6 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 52
+ Index: 1, Value: 0
+ Index: 0, Page: 4, Slot: -1
+ Index: 1, Page: 2, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- New Root Data ----------
+
+ ------- Node Page: 7 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: -1
+ Index: 1, Page: 6, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 52
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 5, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 5
+ ---------- Updated Tree Info ----------
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 5
+ ---- INSERTING KEY: 1 ----Calling searchAndInsertKey.... From nodePageNum: 7
+---------- Current Node Data: ---------
+
+ ------- Node Page: 7 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: -1
+ Index: 1, Page: 6, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 3
+---------- Current Node Data: ---------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 5, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+Message: THIS IS A NON LEAF NODE.
+ Calling searchAndInsertKey... to work with childPageNum: 1
+---------- Current Node Data: ---------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 11
+ Index: 1, Value: 13
+ Index: 0, Page: 2, Slot: 3
+ Index: 1, Page: 1, Slot: 2
+ Index: 2, Page: 5, Slot: -1
+Message: THIS LEAF NODE
+Message: NODE IS FULL
+Message: HANDLING LEAF OVERFLOW
+ ---------- New Node Data ----------
+
+ ------- Node Page: 8 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 13
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: 2
+ Index: 1, Page: -1, Slot: -1
+ Index: 2, Page: 5, Slot: -1
+ ---------- Old Node Data ----------
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 8, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 7
+ tree)->mgmtData->treeNumEntries: 5
+ Return Key: 13
+----- Updated NODE and TREE DATA ----
+
+ ------- Node Page: 1 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 1
+ Index: 1, Value: 11
+ Index: 0, Page: 1, Slot: 1
+ Index: 1, Page: 2, Slot: 3
+ Index: 2, Page: 8, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 8
+ tree)->mgmtData->treeNumEntries: 6
+Message: CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 17
+ Index: 1, Value: 0
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 5, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 8
+ tree)->mgmtData->treeNumEntries: 6
+ INFO: NOT FULL. NO SPLIT
+ ---------- Updated Node Data ----------
+
+ ------- Node Page: 3 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 2
+ nodePage->numPointers: 3
+ Index: 0, Value: 13
+ Index: 1, Value: 17
+ Index: 0, Page: 1, Slot: -1
+ Index: 1, Page: 8, Slot: -1
+ Index: 2, Page: 5, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 8
+ tree)->mgmtData->treeNumEntries: 6
+Message: NO CHILD SPLIT
+ ---------- Current Node Data ----------
+
+ ------- Node Page: 7 --------
+ -- Mgmt Info --
+ nodePage->numKeys: 1
+ nodePage->numPointers: 2
+ Index: 0, Value: 23
+ Index: 1, Value: 0
+ Index: 0, Page: 3, Slot: -1
+ Index: 1, Page: 6, Slot: -1
+ Index: 2, Page: -1, Slot: -1
+ --- Tree Info ---
+ tree)->mgmtData->rootNodePageNum: 7
+ tree)->mgmtData->treeNumNodes: 8
+ tree)->mgmtData->treeNumEntries: 6[test_assign4_1.c-random insertion order and scan-L242-10:00:34] OK: expected <6> and was <6>: number of entries in btree
+[test_assign4_1.c-random insertion order and scan-L250-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L250-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L250-10:00:34] OK: expected true: did we find the correct RID?
+[test_assign4_1.c-random insertion order and scan-L252-10:00:34] OK: expected <303> and was <303>: no error returned by scan
+[test_assign4_1.c-random insertion order and scan-L253-10:00:34] FAILED: expected <6> but was <3>: have seen all entries
+==15572== 
+==15572== HEAP SUMMARY:
+==15572==     in use at exit: 109,576 bytes in 2,116 blocks
+==15572==   total heap usage: 14,466 allocs, 12,350 frees, 8,788,660 bytes allocated
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 22 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804ACD7: insertKey (btree_mgr.c:391)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 23 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B800: searchAndInsertKey (btree_mgr.c:778)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 24 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x80508E1: updatePageFrameList (page_replacement.c:173)
+==15572==    by 0x804F325: pinPage (buffer_mgr.c:254)
+==15572==    by 0x804B5ED: searchAndInsertKey (btree_mgr.c:714)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 25 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B68B: searchAndInsertKey (btree_mgr.c:733)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 26 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B6EA: searchAndInsertKey (btree_mgr.c:746)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 27 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B68B: searchAndInsertKey (btree_mgr.c:733)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 28 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B6EA: searchAndInsertKey (btree_mgr.c:746)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 29 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804BC02: searchAndInsertKey (btree_mgr.c:895)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 30 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804ACD7: insertKey (btree_mgr.c:391)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 31 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B800: searchAndInsertKey (btree_mgr.c:778)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 32 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B68B: searchAndInsertKey (btree_mgr.c:733)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 33 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B6EA: searchAndInsertKey (btree_mgr.c:746)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 34 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804BC02: searchAndInsertKey (btree_mgr.c:895)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 35 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804C72E: handleRootOverflow (btree_mgr.c:1238)
+==15572==    by 0x804BD1D: searchAndInsertKey (btree_mgr.c:965)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 36 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B263: searchAndInsertKey (btree_mgr.c:614)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 37 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B68B: searchAndInsertKey (btree_mgr.c:733)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 38 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B6EA: searchAndInsertKey (btree_mgr.c:746)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 24 bytes in 1 blocks are definitely lost in loss record 39 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804BC02: searchAndInsertKey (btree_mgr.c:895)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 48 bytes in 2 blocks are definitely lost in loss record 43 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B800: searchAndInsertKey (btree_mgr.c:778)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 48 bytes in 2 blocks are definitely lost in loss record 44 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B68B: searchAndInsertKey (btree_mgr.c:733)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 48 bytes in 2 blocks are definitely lost in loss record 45 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804DBFC: updateBTreeManagementPage (btree_mgr.c:1778)
+==15572==    by 0x804B6EA: searchAndInsertKey (btree_mgr.c:746)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 48 bytes in 2 blocks are definitely lost in loss record 46 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B00F: nextEntry (btree_mgr.c:504)
+==15572==    by 0x8049D58: testIndexScan (test_assign4_1.c:247)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 72 bytes in 3 blocks are definitely lost in loss record 47 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B263: searchAndInsertKey (btree_mgr.c:614)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 72 bytes in 3 blocks are definitely lost in loss record 48 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B263: searchAndInsertKey (btree_mgr.c:614)
+==15572==    by 0x804B9EE: searchAndInsertKey (btree_mgr.c:838)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 120 bytes in 5 blocks are definitely lost in loss record 51 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B263: searchAndInsertKey (btree_mgr.c:614)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8048AD5: testInsertAndFind (test_assign4_1.c:75)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== 120 bytes in 5 blocks are definitely lost in loss record 52 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804B263: searchAndInsertKey (btree_mgr.c:614)
+==15572==    by 0x804AD48: insertKey (btree_mgr.c:406)
+==15572==    by 0x8049AF7: testIndexScan (test_assign4_1.c:238)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 120 bytes in 5 blocks are definitely lost in loss record 53 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804AF95: nextEntry (btree_mgr.c:490)
+==15572==    by 0x8049D58: testIndexScan (test_assign4_1.c:247)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 4,096 bytes in 1 blocks are definitely lost in loss record 57 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x804F1F4: pinPage (buffer_mgr.c:232)
+==15572==    by 0x804AF95: nextEntry (btree_mgr.c:490)
+==15572==    by 0x8049D58: testIndexScan (test_assign4_1.c:247)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 8,216 (24 direct, 8,192 indirect) bytes in 3 blocks are definitely lost in loss record 59 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x804AF6D: nextEntry (btree_mgr.c:489)
+==15572==    by 0x8049D58: testIndexScan (test_assign4_1.c:247)
+==15572==    by 0x804883D: main (test_assign4_1.c:35)
+==15572== 
+==15572== 48,000 bytes in 2,000 blocks are definitely lost in loss record 61 of 61
+==15572==    at 0x402BF21: malloc (vg_replace_malloc.c:291)
+==15572==    by 0x8050641: updateList (page_replacement.c:83)
+==15572==    by 0x804F2AE: pinPage (buffer_mgr.c:237)
+==15572==    by 0x804A6E5: findKey (btree_mgr.c:210)
+==15572==    by 0x8048DB6: testInsertAndFind (test_assign4_1.c:90)
+==15572==    by 0x8048838: main (test_assign4_1.c:33)
+==15572== 
+==15572== LEAK SUMMARY:
+==15572==    definitely lost: 53,248 bytes in 2,051 blocks
+==15572==    indirectly lost: 8,192 bytes in 2 blocks
+==15572==      possibly lost: 0 bytes in 0 blocks
+==15572==    still reachable: 48,136 bytes in 63 blocks
+==15572==         suppressed: 0 bytes in 0 blocks
+==15572== Reachable blocks (those to which a pointer was found) are not shown.
+==15572== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==15572== 
+==15572== For counts of detected and suppressed errors, rerun with: -v
+==15572== Use --track-origins=yes to see where uninitialised values come from
+==15572== ERROR SUMMARY: 138 errors from 49 contexts (suppressed: 0 from 0)

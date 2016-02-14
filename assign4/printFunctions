@@ -1,0 +1,20 @@
+void printNodeData(BTreeNodePage *nodePage) {
+    printf("\n\n ------- Node Page: %d --------", nodePage->pageNum);
+    printf("\n -- Mgmt Info --");
+    printf("\n nodePage->numKeys: %d", nodePage->numKeys);
+    printf("\n nodePage->numPointers: %d", nodePage->numPointers);
+
+    int i=0;
+    for(i; i < nodePage->maxNumKeys; i++)
+        printf("\n Index: %d, Value: %d", i, nodePage->bTreeNode->keys[i].v.intV);
+
+    for(i=0; i <= nodePage->maxNumKeys; i++)
+        printf("\n Index: %d, Page: %d, Slot: %d", i, nodePage->bTreeNode->recordsPtr[i].page, nodePage->bTreeNode->recordsPtr[i].slot);
+}
+
+void printTreeInfor(BTreeHandle *tree) {
+    printf("\n --- Tree Info ---");
+    printf("\n tree)->mgmtData->rootNodePageNum: %d", tree->mgmtData->rootNodePageNum);
+    printf("\n tree)->mgmtData->treeNumNodes: %d", tree->mgmtData->treeNumNodes);
+    printf("\n tree)->mgmtData->treeNumEntries: %d", tree->mgmtData->treeNumEntries);
+}
